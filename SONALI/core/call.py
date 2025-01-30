@@ -2,7 +2,6 @@ import asyncio
 import os
 from datetime import datetime, timedelta
 from typing import Union
-
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup
 from pytgcalls import PyTgCalls, StreamType
@@ -15,7 +14,6 @@ from pytgcalls.types import Update
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
 from pytgcalls.types.stream import StreamAudioEnded
-
 import config
 from SONALI import LOGGER, YouTube, app
 from SONALI.misc import db
@@ -37,6 +35,7 @@ from SONALI.utils.inline.play import stream_markup, telegram_markup
 from SONALI.utils.stream.autoclear import auto_clean
 from SONALI.utils.thumbnails import get_thumb
 from strings import get_string
+
 
 autoend = {}
 counter = {}
